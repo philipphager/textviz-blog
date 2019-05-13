@@ -1,25 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Analysing members of the German Bundestag"
 date:   2019-05-13 11:38:47 +0200
-categories: jekyll update
+categories: textviz bundestag offenesparlament d3
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+I analysed speeches given by members of the German parliament from protocols published by [OffenesParlament.de](https://offenesparlament.de). I used an author-topic model to find 20 different topics and how likely it is that one speaker talks about them (also called topic distribution). I created two interactive graphics you can check out:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+1. [Analysing the topic distribution per party](https://philipphager.github.io/textviz-blog/assignments/05/party)
 
-Jekyll also offers powerful support for code snippets:
+2. [Analysing the topic distribution per member](https://philipphager.github.io/textviz-blog/assignments/05/member/)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Thanks for reading.
