@@ -56,7 +56,6 @@ var topics = [
 ];
 
 function drawGraph(allNodes, allEdges) {
-    simulation.restart();
     nodes = allNodes;
     edges = allEdges.filter((d) => selectedTopics.includes(d.target));
 
@@ -89,7 +88,10 @@ function drawGraph(allNodes, allEdges) {
             selectedTopics.push(topic.id);
         }
 
-        drawGraph(data.nodes, data.edges);
+        d3.json("data.json", function (error, graph) {
+            if (error) throw error;
+            drawGraph(graph.nodes, graph.edges);
+        });
     };
 
     var link = svg.append("g")
@@ -257,8 +259,6 @@ function dragended(d) {
 
 d3.json("data.json", function (error, graph) {
     if (error) throw error;
-    data = graph;
-
-    drawGraph(data.nodes, data.edges);
+    drawGraph(graph.nodes, graph.edges);
 });
 
