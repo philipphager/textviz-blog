@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+  <title>TextViz Blog | Knowledge Grpahs</title>
+  <meta name="generator" content="Jekyll v3.8.5" />
+  <meta property="og:title" content="About" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description"
+    content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+  <meta property="og:description"
+    content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+  <link rel="canonical" href="http://localhost:4000/about/" />
+  <meta property="og:url" content="http://localhost:4000/about/" />
+  <meta property="og:site_name" content="Your awesome title" />
+  <script type="application/ld+json">
+  {"url":"http://localhost:4000/about/","headline":"About","name":"Your awesome title","description":"Write an awesome
+  description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta
+  (for Google search results) and in your feed.xml site description.","@type":"WebSite","@context":"https://schema.org"}
+  </script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-size: 14px;
+      font-family: "Helvetica Neue", Helvetica;
+    }
+
+    .links line {
+      stroke: #999;
+      stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+
+    text {
+      font-family: sans-serif;
+      font-size: 10px;
+    }
+
+    #viz {
+      width: 900px;
+      height: 700px;
+      border: 1px solid lightgray;
+      font: 22pt arial;
+    }
+  </style>
+  <!-- End Jekyll SEO tag -->
+  <link rel="stylesheet" href="../../../assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+</head>
+
+<body onload="draw('show all')">
+  <header class="site-header" role="banner">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/textviz-blog">TextViz Blog</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+          </span>
+        </label>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post">
+
+        <header class="post-header">
+          <h1 class="post-title">Knowledge Graph from TechCrunch Headlines (2017)</h1>
+        </header>
+        <div class="post-content">
+          <div id="viz"></div>
+          <div>
+            <h2>Choose predicate</h2>
+            <select id="predicate"></select>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  </footer>
+
+  <script src="https://cdn.neo4jlabs.com/neovis.js/v1.0.0/neovis.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
