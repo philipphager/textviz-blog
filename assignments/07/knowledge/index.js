@@ -184,8 +184,7 @@ function draw(predicate) {
                 "caption": "id"
             }
         },
-        initial_cypher: cypher,
-        encrypted: "ENCRYPTION_ON"
+        initial_cypher: cypher
     };
 
     viz = new NeoVis.default(config);
