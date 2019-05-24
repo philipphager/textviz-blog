@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Analysing members of the German Bundestag, Part 2"
+date:   2019-05-20 11:38:47 +0200
+categories: textviz bundestag offenesparlament d3
+---
+I analysed speeches given by members of the German parliament from protocols published by [OffenesParlament.de](https://offenesparlament.de). In this second post, I analysed the readability of given speeches by topic. I visualized my findings in an interactive graph, depicting the members of parliament and their connection to  specific topics.
+
+1. [Readability of Speeches given by Topics, German Parliament](https://philipphager.github.io/textviz-blog/assignments/06/readability/)
+
+Thanks for reading.
